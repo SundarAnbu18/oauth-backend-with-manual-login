@@ -21,15 +21,15 @@ passport.use(new GoogleStrategy({
     done(null,profile)
     console.log('response',profile)
     //model.test.insert(profile)
-        const sub = new model({
-          id:profile.id,
-        displayName:profile.displayName,
-        name:profile.name.familyName,
-        givenName:profile.name.givenName,
-        provider:profile.provider,
-        //email:profile.emails[0].value
-        //console.log()
-    })
+    //     const sub = new model({
+    //       id:profile.id,
+    //     displayName:profile.displayName,
+    //     name:profile.name.familyName,
+    //     givenName:profile.name.givenName,
+    //     provider:profile.provider,
+    //     //email:profile.emails[0].value
+    //     //console.log()
+    // })
     try {
       console.log('entered into loop',sub)
         const savesub = await sub.save()
