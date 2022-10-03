@@ -31,10 +31,10 @@ passport.use(new GoogleStrategy({
     //     //console.log()
     // })
     try {
-      console.log('entered into loop',sub)
-        const savesub = await sub.save()
+      //console.log('entered into loop',sub)
+       // const savesub = await sub.save()
         // res.send(savesub)
-        console.log(savesub)
+       // console.log(savesub)
     } catch (err) {
         console.log(err)
     }

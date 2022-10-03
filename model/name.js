@@ -2,17 +2,14 @@ const mongoose=require('mongoose')
 
 const schema=new mongoose.Schema({
 
-    id:{
-        type:Number,
-        required:false
-    },
+   
     email:{
         type:String,
-        required:false
+        required:true
     },
     password:{
         type:String,
-        required:false
+        required:true
     },
     displayName:{
         type:String,
@@ -20,23 +17,7 @@ const schema=new mongoose.Schema({
     },
     name:{
         type:String,
-        required:false
-    },
-    givenName:{
-        type:String,
-        required:false
-    },
-    provider:{
-        type:String,
-        required:false
-    },
-    profileURL:{
-        type:String,
-        required:false
-    },
-    username:{
-        type:String,
-        required:false
+        required:true
     },
     date:{
         type:Date,
